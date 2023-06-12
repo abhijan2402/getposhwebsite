@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  /* max-height: 10cm;
+  height: 100vh; */
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
 }
 
@@ -15,7 +17,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +30,120 @@
   color: #61dafb;
 }
 
+.MainApp {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid red; */
+  height: 99vh;
+}
+
+.InnerMainDiv2 {
+  width: 60%
+}
+
+.InnerMainDiv1 {
+  width: 39%;
+  /* border: 1px solid red; */
+  padding-top: 10%;
+}
+
+.Innerh1 {
+  margin: auto;
+  width: auto;
+  width: 60%;
+  padding-top: 0.5%;
+}
+
+.AppInnerDiv {
+  height: 2cm;
+  width: 2cm;
+  /* border: 1px solid red; */
+  padding-top: 3%;
+  padding-left: 5%;
+}
+
+.Innerh1 h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.InnerP {
+  margin: auto;
+  width: auto;
+  width: 80%;
+  padding-top: 2px;
+}
+
+.InnerP p {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: narrower;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 180%;
+
+}
+
+.Innerbtn {
+  margin: auto;
+  width: auto;
+  padding-top: 5%;
+}
+
+.ShopBtn {
+  background-color: rgb(226, 58, 58);
+  color: white;
+  font-weight: 600;
+  padding: 1% 4%;
+  border-radius: 8px;
+  border: 0px;
+  font-size: 25px;
+  transition: 0.7s ease-in-out;
+  text-decoration: none;
+}
+
+.ShopLG {
+  width: 10%;
+  height: 10%;
+  margin-left: 5%;
+}
+
+.img_to_view {
+  width: 100%;
+  height: 100%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (min-width: 260px) and (max-width:900px) {
+  .MainApp {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .InnerMainDiv2 {
+    width: 100%;
+  }
+
+  .InnerMainDiv1 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .ShopLG {
+    width: 20%;
+    height: 20%;
+    margin-left: 5%;
+  }
+
 }
